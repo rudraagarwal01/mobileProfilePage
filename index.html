@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile - Apollonian</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3ef6f07ea0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/components/profile/profile/profile.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h2><i class="fa-solid fa-brain"></i> Apollonian</h2>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="/home"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="/search"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+          <li><a href="/posts"><i class="fa-solid fa-pen-nib"></i> Posts</a></li>
+          <li><a href="/mentors"><i class="fas fa-user-friends"></i> Mentors</a></li>
+          <li><a href="/chats"><i class="fa-regular fa-message"></i> Chats</a></li>
+          <li><a href="/profile" class="active"><i class="fa-regular fa-user"></i> Profile</a></li>
+        </ul>
+      </nav>
+      <div class="switch-mode">
+        <button>
+          <i class="fa-solid fa-toggle-off"></i> 
+          Switch to light mode
+        </button>
+      </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="profile-header">
+        <img src="/images/profile.png" alt="Profile Picture" class="profile-pic">
+        <div class="profile-info">
+          <h1>[Username]</h1>
+          <div class="profile-stats">
+            <span># following</span>
+            <span># follower</span>
+          </div>
+          <p class="profile-bio">User's bio</p>
+        </div>
+      </div>
+      <div class="profile-actions">
+        <button class="edit-btn">
+          <i class="fa-regular fa-pen-to-square"></i>
+          Edit
+        </button>
+        <button class="add-btn">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <div class="posts-grid">
+        <!-- Only 4 Bubble Tea posts -->
+        <div class="post-item"><img src="/images/BubbleTea.avif" alt="Post"></div>
+        <div class="post-item"><img src="/images/BubbleTea.avif" alt="Post"></div>
+        <div class="post-item"><img src="/images/BubbleTea.avif" alt="Post"></div>
+        <div class="post-item"><img src="/images/BubbleTea.avif" alt="Post"></div>
+        <div class="post-item"><img src="/images/BubbleTea.avif" alt="Post"></div>
+        <div class="post-item"><img src="/images/BubbleTea.avif" alt="Post"></div>
+      </div>
+    </main>
+    
+    <!-- Right Panel -->
+    <aside class="right-panel">
+      <div class="rp-header">
+        <div class="rp-user-info">
+          <img src="/images/profile.png" alt="Profile Picture" class="rp-profile-pic">
+          <span class="rp-username">Apollonian</span>
+        </div>
+        <div class="rp-actions">
+          <button class="rp-chats-btn">
+            <i class="fa-regular fa-message"></i>
+            My Chats
+          </button>
+        </div>
+      </div>
+      <p class="rp-user-statement">
+        I want to know how to improve the mental health process.
+      </p>
+      <!-- Tabs: My Mentors / My Profile -->
+      <div class="rp-tabs">
+        <span class="rp-tab mentors-tab active">My Mentors</span>
+        <span class="rp-tab profile-tab">My Profile</span>
+      </div>
+      <hr class="rp-divider">
+      <!-- Mentors Content (active by default) -->
+      <div class="rp-tab-content mentors-content active">
+        <button class="rp-create-mentor-btn">
+          <i class="fa-solid fa-plus"></i>
+          Create your first Mentor
+        </button>
+      </div>
+      <!-- Profile Content -->
+      <div class="rp-tab-content profile-content">
+        <p class="streak-value">Streak: 10 days</p>
+        <p class="goal-percent">Goals achieved: 70%</p>
+        <input type="range" min="0" max="100" value="70">
+        <p class="panel-text">Some insights about your progress...</p>
+        <div class="top-percent">
+          <h3>Top 10%</h3>
+          <p>You’re in the top 10% for consistent follow‐through!</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+  
+  <!-- JS Script (for tab switching) -->
+  <script src="/components/profile/profile/profile.js"></script>
+</body>
+</html>
